@@ -3,7 +3,7 @@ import generateSitemap from 'vite-ssg-sitemap'
 import { createViteProxy, resolvePath, setupVitePlugins, viteDefine } from './build'
 
 export default defineConfig((configEnv) => {
-  const viteEnv = loadEnv(configEnv.mode, process.cwd()) as unknown as ImportMetaEnv
+  const viteEnv = loadEnv(configEnv.mode, process.cwd()) as ImportMetaEnv
   const vitePath = resolvePath('./', import.meta.url)
 
   return {
