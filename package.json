@@ -8,8 +8,9 @@
     "preview": "vite preview",
     "preview-https": "serve dist",
     "test": "vitest",
-    "test:e2e": "cypress open",
     "test:unit": "vitest",
+    "test:e2e": "cypress open",
+    "coverage": "vitest run --coverage",
     "type:check": "vue-tsc --noEmit"
   },
   "dependencies": {

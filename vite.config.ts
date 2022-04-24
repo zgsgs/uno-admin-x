@@ -37,9 +37,12 @@ export default defineConfig((configEnv) => {
     // https://github.com/vitest-dev/vitest
     test: {
       include: ['test/**/*.test.ts'],
-      environment: 'jsdom',
+      environment: 'jsdom', // 或 'happy-dom', 'node'
       deps: {
         inline: ['@vue', '@vueuse', 'vue-demi'],
+      },
+      coverage: {
+        reporter: ['text', 'json', 'html'],
       },
     },
   }
