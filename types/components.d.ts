@@ -5,8 +5,14 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AdminLayout: typeof import('./../src/components/AdminLayout.vue')['default']
     Counter: typeof import('./../src/components/Counter.vue')['default']
     Footer: typeof import('./../src/components/Footer.vue')['default']
+    LayoutContent: typeof import('./../src/components/LayoutContent.vue')['default']
+    LayoutFooter: typeof import('./../src/components/LayoutFooter.vue')['default']
+    LayoutHeader: typeof import('./../src/components/LayoutHeader.vue')['default']
+    LayoutSider: typeof import('./../src/components/LayoutSider.vue')['default']
+    LayoutTab: typeof import('./../src/components/LayoutTab.vue')['default']
     README: typeof import('./../src/components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
