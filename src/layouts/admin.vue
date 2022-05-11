@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { AdminLayout } from '@/layouts/AdminLayout'
+
 type Mode = 'vertical' | 'horizontal'
 const mode = ref<Mode>('vertical')
 const modeList: Mode[] = ['vertical', 'horizontal']

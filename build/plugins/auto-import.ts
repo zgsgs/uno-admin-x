@@ -3,7 +3,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 // https://github.com/antfu/unplugin-auto-import
 export default AutoImport({
   imports: [
-    'vue',
+    'vue-demi',
     'vue-router',
     'vue-i18n',
     'vue/macros',

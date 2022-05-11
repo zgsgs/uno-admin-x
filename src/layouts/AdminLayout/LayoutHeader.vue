@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue-demi'
 import { useCssRender } from '@/hooks'
 
 interface Props {
@@ -21,7 +20,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   fixed: true,
-  zIndex: 999,
+  zIndex: 1001,
   minWidth: 1200,
   height: 56,
   paddingLeft: 0,
@@ -38,9 +37,9 @@ const style = computed(() => {
 })
 
 // css
-cssRender('.uno-admin-layout__footer', {
+cssRender('.uno-admin-layout__header', {
   left: 0,
-  bottom: 0,
+  top: 0,
   flexShrink: 0,
   boxSizing: 'border-box',
   width: '100%',
@@ -49,7 +48,7 @@ cssRender('.uno-admin-layout__footer', {
 </script>
 
 <template>
-  <footer class="uno-admin-layout__footer" :style="style">
+  <header class="uno-admin-layout__header" :style="style">
     <slot />
-  </footer>
+  </header>
 </template>

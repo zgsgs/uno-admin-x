@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue-demi'
-import { LayoutContent, LayoutFooter, LayoutHeader, LayoutSider, LayoutTab } from '@/components'
+import { LayoutContent, LayoutFooter, LayoutHeader, LayoutSider, LayoutTab } from '@/layouts/AdminLayout'
 import { useCssRender, useFixedTransformStyle } from '@/hooks'
 
 interface Props {
